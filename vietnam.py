@@ -2,7 +2,7 @@
 import pygal
 def main():
     """This Function make graph to show data"""
-    bar_chart = pygal.Bar()
+    bar_chart = pygal.HorizontalBar(print_values=True, print_values_position='top')
     bar_chart.title = "นำเข้า-ส่งออกในประเทศเวียดนาม"
     bar_chart.x_labels = map(str range(2549, 2559))
     bar_chart.add('ส่งออก', [217546.25, 253260.62, 217546.25, 200274.70, 212703.66, 184463.07, 159224.41, 165101.24, 130870.51, 116906.89])
